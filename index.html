@@ -3,17 +3,85 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Forside</title>
+        <title>Forside FLIP</title>
     </head>
     <body>
+        <div id="grid-container">
         <header>
             <nav>
-                 <span>
-                   <a href="index.html">FLIP</a>
-                 </span>
-                 
+                <a href="index.html" id="logo">FLIP</a>
+                 <div>
+                    <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i id="heart" class="fa-regular fa-heart"></i>
+                    <i id="shopping-cart" class="fa-solid fa-cart-shopping"></i>
+                    <i id="user" class="fa-regular fa-user"></i>
+                 </div>
+                 <ul class="navbar">
+                    <li><a href="produkt.html">Dame</a></li>
+                    <li><a href="#">Menn</a></li>
+                    <li><a href="#">Barn</a></li>
+                 </ul>
             </nav>
         </header>
+        <main>
+            <!--Seksjon 1 for søkefelt-->
+            <section class="search">
+                <form method="post" action="#">
+                    <input type="text" name="search" placeholder="SEARCH" id="search">
+                </form>
+            </section>
+            <!--Seksjon 2 new arrivals-->
+            <section class="main-campaign">
+                <img src="img/forside-stort.jpg" alt="bilde av dame med svarte boots">
+                <section>
+                    <h1>NEW ARRIVALS</h1>
+                    <p>Bli klar for hørsten med lekre nyheter</p>
+                    <a href="#" class="beige-btn">Shop nyheter</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </section>
+            </section>
+            <!--Seksjon 3 for boots-->
+            <section class="left">
+                <img src="img/boots.jpg" alt="Image category for boots">
+                <section>
+                    <h2>BOOTS</h2>
+                    <a href="#" class="beige-btn">Shop nå</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </section>
+            </section>
+            <!--Seksjon 4 for tøfler-->
+            <section class="middel">
+                <img src="img/tofler.jpeg" alt="Image category for tofler">
+                <section>
+                    <h2>TØFLER</h2>
+                    <a href="#" class="beige-btn">Shop nå</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </section>
+            </section>
+            <!--Seksjon 5 for sneakers-->
+            <section class="right">
+                <img src="img/sneakers.jpg" alt="Image category for sneakers">
+                <section>
+                    <h2>SNEAKERS</h2>
+                    <a href="produkt.html" class="beige-btn">Shop nå</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </section>
+            </section>
+        </main>
+        <!--Error må rette opp footer!!!!-->
+        <footer>
+            <ul id="social-icons">
+                <i id="instagram" class="fa-brands fa-instagram"></i>
+                <i id="facebook" class="fa-brands fa-square-facebook"></i>
+                <p>Følg oss på sosiale medier for nyheter</p>
+            </ul>
+        </footer>
+        </div>
     </body>
 </html>
