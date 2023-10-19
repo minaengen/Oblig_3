@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CCC6BA;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+header nav div{
+    display: flex;
+    gap: 1rem;
+}
+
+#logo{
+    text-decoration: none;
+    color: #000;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
+}
+
+.responsive a{
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+.beige-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: #000;
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+
+main{
+    grid-area: main;
+}
+
+main section img{
+    width: 100%;
+}
+
+
+footer{
+    grid-area: footer;
+}
