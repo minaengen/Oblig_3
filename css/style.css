@@ -5,7 +5,7 @@ body{
 
 #grid-container{
     display: grid;
-    grid-template-columns: "header" "main" "footer";
+    grid-template-areas: "header" "main" "footer";
 }
 
 header, main, footer{
@@ -68,6 +68,7 @@ header nav div{
 }
 
 
+
 main{
     grid-area: main;
 }
@@ -101,3 +102,39 @@ footer{
     grid-area: footer;
 }
 
+@media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-areas: "header header header" ". main ." "footer footer footer";
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-section img{
+        width: 50%;
+    }
+
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    .right img{
+        order:1;
+    }
+}
