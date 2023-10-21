@@ -72,11 +72,32 @@ main{
     grid-area: main;
 }
 
+
 main section img{
     width: 100%;
 }
 
 
+#main-campaign{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+
+#left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+
+
 footer{
     grid-area: footer;
 }
+
