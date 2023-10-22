@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--Brukt kode som Ann-Charlott Beatrice Karlsen har vist i forelesninger-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
@@ -12,33 +13,40 @@
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <div>
-                        <a href="index.html" id="logo">FLIP</a>
-                        <i id="heart" class="fa-regular fa-heart"></i>
-                        <a href="handlekurv.html"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
-                        <i id="user" class="fa-regular fa-user"></i>
-                    </div>
-                    <ul class="navvbar">
-                        <li><a href="produkt.html">Dame</a></li>
-                        <li><a href="#">Menn</a></li>
-                        <li><a href="#">Barn</a></li>
-                    </ul>
-                    <ul class="navbar2">
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="#">Sneakers</a></li>
-                    </ul>
-                </nav>
-                <!--Seksjon 1 for søkefelt-->
-                <section class="search">
-                    <form method="post" action="#">
-                        <input type="text" name="search" placeholder="SEARCH" id="search">
-                        <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
-                    </form>
-                </section>
-            </header>
+        <header>
+            <nav>
+                <!--Hamburger ikonet-->
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <a href="index.html" id="logo">FLIP</a>
+                 <div>
+                    <!--Fovoritt ikonet-->
+                    <i id="heart" class="fa-regular fa-heart"></i>
+                    <!--Handlekurv ikonet-->
+                    <a href="handlekurv.html"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
+                    <i id="user" class="fa-regular fa-user"></i>
+                 </div>
+            </nav>
+                 <hr class="strek">
+                 <!--Liste for navbar-->
+                 <ul class="navbar">
+                    <li><a href="produkt.html">Dame</a></li>
+                    <li><a href="#">Menn</a></li>
+                    <li><a href="#">Barn</a></li>
+                 </ul>
+                 <!--Liste for brødsmulestien-->
+                 <ul class="navbar2">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="produkt.html">Sneakers</a></li>
+                 </ul>
+            
+            <!--Seksjon 1 for søkefelt-->
+            <section class="search">
+                <form method="post" action="#">
+                    <input type="text" name="search" placeholder="SEARCH" id="search">
+                    <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </section>
+        </header>
             <main>
                 <h1>SNEAKERS</h1>
                 <a href="#" class="beige-btn">Filter <i class="fa-solid fa-sliders"></i></a>
@@ -48,7 +56,7 @@
                 <section class="default-flex">
                     <!--Article for Nike skoene-->
                     <article>
-                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene-->
+                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene og hjerte-->
                         <img src="img/sko1.jpg" alt="Image for Nike shoes">
                         <h2 class="brand">Nike Sportswear</h2>
                         <p>AIR FORCE 1 '07</p>
@@ -56,7 +64,7 @@
                     </article>
                     <!--Article for Puma skoene-->
                     <article>
-                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene-->
+                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene og hjerte-->
                         <img src="img/sko2.jpg" alt="Image for Puma shoes">
                         <h2 class="brand">Puma</h2>
                         <p>JADA RENEW</p>
@@ -64,7 +72,7 @@
                     </article>
                     <!--Article for Veja skoene-->
                     <article>
-                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene-->
+                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene og hjerte-->
                         <img src="img/sko3.jpg" alt="Image for Veja shoes">
                         <h2 class="brand">Veja</h2>
                         <p>CAMPO</p>
@@ -72,7 +80,7 @@
                     </article>
                     <!--Article for Adidas skoene-->
                     <article>
-                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene-->
+                        <!--legge til en boks som skal ligge bak bildene og teksten til bildene og hjerte-->
                         <img src="img/sko4.jpg" alt="Image for Adidas shoes">
                         <h2 class="brand">adidas Originals</h2>
                         <p>GAZELLE</p>

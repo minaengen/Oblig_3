@@ -1,23 +1,26 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #CCC6BA;
+    min-width: 572px;
 }
+
 
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
 
+
 header, main, footer{
     padding: 1rem;
 }
+
 
 /* Styling for overskrift og navigasjon i header*/
 header{
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
-    
 }
 
 
@@ -25,6 +28,8 @@ header nav{
     display: flex;
     justify-content: space-between;
     position: relative;
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
 }
 
 
@@ -36,27 +41,52 @@ header nav div{
     
 }
 
-header nav ul{
+
+header ul{
     display: flex;
     gap: 0.5rem;
     list-style: none;
+    font-size: 1rem;
+    padding: -1rem;
 }
 
-nav a{
+
+header ul a{
     text-decoration: none;
     color: #000;
-    
     display: inline-block;
 }
 
-#ham{
-    margin: 1rem 1rem 0 0;
+
+ul.navbar{
+    padding: 0;
 }
+
+
+ul.navbar2{
+    padding: 0;
+}
+
+#ham{
+    margin: 1rem 4rem 0 0;
+}
+
 
 #logo{
     text-decoration: none;
     color: #000;
+    margin: 1rem;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: abhaya libre;
 }
+
+
+ hr.strek {
+    border: 1px solid black;
+    width: 100%;
+} 
+
 
 .responsive{
     display: flex;
@@ -70,6 +100,7 @@ nav a{
     list-style: none;
     gap: 1rem;
 }
+
 
 .responsive a{
     color: #fff;
@@ -90,6 +121,7 @@ nav a{
     font-weight: 300;
 }
 
+
 .white-btn{
     display: inline-block;
     padding: 0.5rem;
@@ -100,6 +132,7 @@ nav a{
     border-radius: 50px;
     font-weight: 300;
 }
+
 
 .dark-beige-btn{
     display: inline-block;
@@ -124,6 +157,39 @@ main section img{
 }
 
 
+main section.left{
+    float:left;
+    padding: 0 15px 0 0;
+}
+
+
+main section.left img{
+    width:170px;
+}
+
+
+main section.middle{
+    float:left;
+    padding: 0 15px 0 0;
+}
+
+
+main section.middle img{
+    width:170px;
+}
+
+
+main section.right{
+    float:left;
+    padding: 0;
+}
+
+
+main section.right img{
+    width:170px;
+}
+
+
 #main-campaign{
     display: flex;
     flex-direction: row;
@@ -133,14 +199,24 @@ main section img{
 }
 
 
-#left{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: space-around;
+section.text-main-campaign{
+    text-align: center;
 }
 
+
+section.text-left{
+    text-align: center;
+}
+
+
+section.text-middle{
+    text-align: center;
+}
+
+
+section.text-right{
+    text-align: center;
+}
 
 .view-mode{
     height: 50px;
@@ -148,29 +224,39 @@ main section img{
 }
 
 
-
 footer{
     grid-area: footer;
+    text-align: center;
+}
 
 
-}.default-flex{
+ul#social-icons{
+    padding: 0;
+}
+
+
+.default-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+
 .default-flex h2{
     flex-basis: 100%;
 }
+
 
 .default-flex article{
     flex-basis: 25%;
     min-width: 250px;
 }
 
+
 .default-flex article img{
     width: 100%;
 }
+
 
 .badge:after{
     content:attr(value);
@@ -183,6 +269,13 @@ footer{
     top:-10px;
     opacity:0.9;
 }
+
+
+#betalingsmåter{
+    display: flex;
+    
+}
+
 
 @media only screen and (min-width:600px){
     #grid-container{

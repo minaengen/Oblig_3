@@ -12,29 +12,23 @@
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
-                    <div>
-                        <a href="index.html" id="logo">FLIP</a>
-                        <i id="heart" class="fa-regular fa-heart"></i>
-                        <!--Dette tipset har jeg fra https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon - Den tar og lager en egen klasse som den posisjonerer oppe på ikonet. Henter så inn riktig ikon med unicoden til ikonet fra fontawesome -->
-                        <a href="handlekurv.html"><i class="fa badge" style="font-size:24px;color:#000" value=2>&#xf07a;</i></a>
-                        <i id="user" class="fa-regular fa-user"></i>
-                    </div>
-                    <ul class="navvbar">
-                        <li><a href="produkt.html">Dame</a></li>
-                        <li><a href="#">Menn</a></li>
-                        <li><a href="#">Barn</a></li>
-                    </ul>
-                    <ul class="navbar3">
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="produkt.html">Sneakers</a></li>
-                        <li><a href="#">Handlekurv</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <nav>
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <a href="index.html" id="logo">FLIP</a>
+                 <div>
+                    <i id="heart" class="fa-regular fa-heart"></i>
+                    <a href="handlekurv.html"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
+                    <i id="user" class="fa-regular fa-user"></i>
+                 </div>
+            </nav>
+                 <hr class="strek">
+                 <ul class="navbar">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="produkt.html">Sneakers</a></li>
+                    <li><a href="handlekurv.html">Handlekurv</a></li>
+                 </ul>
+        </header>
             <main>
                 <h1>HANDLEKURV (2 varer)</h1>
                 <!--Seksjon for skoene i handlekurven-->
@@ -56,12 +50,20 @@
                         <p>1 256,00kr</p>
                     </article>
                 </section>
-                <section>
+                <!--Seksjon for betaling-->
+                <section class="faktura">
                     <h2>Total sum</h2>
                     <p>Mellomsum</p>
                     <p>Frakt</p>
                     <p>Total sum</p>
                     <a href="#" class="dark-beige-btn">TIL KASSEN</a>
+                </section>
+                <!--Seksjon for betalingsmåter-->
+                <section class="betalingsmåter">
+                    <img src="img/Klarna.jpeg" alt="logo for klarna">
+                    <img src="img/vipps.jpeg" alt="logo for vipps">
+                    <img src="img/Mastercard.jpeg" alt="logo for mastercard">
+                    <img src="img/visa.jpeg" alt="logo for visa">
                 </section>
             </main>
             <footer>
