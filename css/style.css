@@ -44,8 +44,8 @@ header nav div{
     
 }
 
-
-header ul{
+/*Styling for (dame, menn, barn) navbaren*/
+header ul.navbar{
     display: flex;
     gap: 0.5rem;
     list-style: none;
@@ -53,27 +53,41 @@ header ul{
     padding: -1rem;
 }
 
-
-header ul a{
+header ul.navbar a{
     text-decoration: none;
     color: #000;
     display: inline-block;
 }
 
-
 ul.navbar{
     padding: 0;
 }
 
+/*Styling for (hjem, sneakers) brødsmulestien*/
+header ul.navbar2{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    font-size: 1rem;
+    padding: -1rem;
+}
+
+header ul.navbar2 a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
 
 ul.navbar2{
     padding: 0;
 }
 
+/*Styling for hamburgermenyen ikonet*/
 #ham{
     margin: 1rem 4rem 0 0;
 }
 
+/*Styling for handlekurv ikonet*/
 #shopping-cart{
     color: #000;
 }
@@ -94,6 +108,7 @@ ul.navbar2{
     width: 100%;
 } 
 
+/*Styling for h1 på index.html (forsiden) for å fjerne understreken*/
 main h1{
     text-decoration: underline;
 }
@@ -108,8 +123,6 @@ section.search{
 img.view-mode{
     float: right;
 }
-
-
 
 
 
@@ -335,6 +348,7 @@ article.products-handlekurv{
     width: 599px;
 }
 
+
 /*Styling for betalingsboksen*/
 section.faktura{
     background-color: #D9D9D9;
@@ -348,6 +362,16 @@ section.text-faktura{
 a.dark-beige-btn{
     text-align: center;
 }
+
+.table-faktura{
+    width: 100%;
+    
+}
+
+hr.strek2{
+    border: 1px solid #868686;
+    width: 100%;
+} 
 
 .betalingsmaater-center{
     text-align: center;
@@ -374,6 +398,24 @@ a.dark-beige-btn{
 
     #ham, .fa-magnifying-glass{
         display: none;
+    }
+
+
+    header ul.navbar-desktop{
+        display: flex;
+        gap: 0.5rem;
+        list-style: none;
+        font-size: 1rem;
+        padding: -1rem;
+    }
+    
+    header ul.navbar-desktop a{
+        color: #000;
+        
+    }
+    
+    ul.navbar-desktop{
+        padding: 0;
     }
 
     .flex-section{
