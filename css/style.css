@@ -82,6 +82,10 @@ ul.navbar2{
     padding: 0;
 }
 
+header ul.navbar-desktop{
+    display: none;
+}
+
 /*Styling for hamburgermenyen ikonet*/
 #ham{
     margin: 1rem 4rem 0 0;
@@ -90,6 +94,13 @@ ul.navbar2{
 /*Styling for handlekurv ikonet*/
 #shopping-cart{
     color: #000;
+}
+
+/*Styling for favoritt ikonet øverst i høyre hjørnet på skoene på produkt siden*/
+article.favoritt{
+    text-align: right;
+    background-color: #f7f4f4;
+    font-size: 150%;
 }
 
 /*Styling for logoen*/
@@ -124,7 +135,11 @@ img.view-mode{
     float: right;
 }
 
-
+/*Styling og plassering av søppelkasse ikonet på handlekurv siden*/
+#trash{
+    float: right;
+    font-size: 100%;
+}
 
 .responsive{
     display: flex;
@@ -185,6 +200,7 @@ img.view-mode{
     border: 2px solid #868686;
     border-radius: 5px;
     font-weight: 300;
+    width: 30%;
 }
 
 
@@ -309,14 +325,14 @@ ul#social-icons{
 
 
 .handlekurv-flex article img{
-    width: 30%;
+    width: 45%;
     float: left;
     margin: 0 1rem 0 0;
 }
 
 
 article.text-handlekurv{
-    width: 30%;
+    width: 50%;
     float: left;
 }
 
@@ -375,6 +391,7 @@ hr.strek2{
 
 .betalingsmaater-center{
     text-align: center;
+    padding: 1rem;
 }
 
 .betalingsmaater img{
@@ -407,6 +424,7 @@ hr.strek2{
         list-style: none;
         font-size: 1rem;
         padding: -1rem;
+        flex-direction: column;
     }
     
     header ul.navbar-desktop a{
@@ -437,4 +455,41 @@ hr.strek2{
     .right img{
         order:1;
     }
+
+
+    main section.left{
+        float:left;
+        padding: 0 15px 0 0;
+        width: 30%;
+    }
+
+
+    main section.left img{
+        width: 100%;
+    }
+
+
+    main section.middle{
+        float:left;
+        padding: 0 15px 0 0;
+        width: 30%;
+    }
+
+
+    main section.middle img{
+        width:100%;
+    }
+
+
+    main section.right{
+        float:left;
+        padding: 0;
+        width: 30%;
+    }
+
+
+    main section.right img{
+        width:100%;
+    }
+
 }
