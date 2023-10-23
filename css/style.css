@@ -141,26 +141,11 @@ img.view-mode{
     font-size: 150%;
 }
 
-.responsive{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-    top: 40px;
-    width: 100%;
-    list-style: none;
-    gap: 1rem;
+#trash2{
+    float: right;
+    font-size: 150%;
 }
 
-
-.responsive a{
-    color: #fff;
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-}
 
 /*Styling for de beige knappene på hovedsiden*/
 .beige-btn{
@@ -203,53 +188,52 @@ img.view-mode{
     width: 30%;
 }
 
-
+/*Styling for index.html (forsiden)*/
 main{
     grid-area: main;
 }
-
 
 main section img{
     width: 100%;
 }
 
 
+/*Venstre bilde nederst for "boots" på forsiden*/
 main section.left{
     float:left;
     padding: 0 15px 0 0;
     width: 185px;
 }
 
-
 main section.left img{
     width:185px;
 }
 
 
+/*Bilde i midten nederst for "tøfler" på forsiden*/
 main section.middle{
     float:left;
     padding: 0 15px 0 0;
     width: 185px;
 }
 
-
 main section.middle img{
     width:185px;
 }
 
 
+/*Høyre bilde nederst for "sneakers" på forsiden*/
 main section.right{
     float:left;
     padding: 0;
     width: 185px;
 }
 
-
 main section.right img{
     width:185px;
 }
 
-
+/*Seksjon for teksten på forsiden*/
 section.text-main-campaign{
     text-align: center;
 }
@@ -269,18 +253,22 @@ section.text-right{
     text-align: center;
 }
 
+
+/*css for knappene for å velge om man vil se på to og to sko ved siden av hverandre eller en sko om gangen på produkt siden*/
 .view-mode{
     height: 50px;
     margin-bottom: -1rem;
 }
 
 
+/*Footer*/
 footer{
     grid-area: footer;
     text-align: center;
 }
 
 
+/*Ikonene for sosiale medier i bunnen av sidene*/
 ul#social-icons{
     padding: 0;
     margin: 0;
@@ -288,6 +276,7 @@ ul#social-icons{
 }
 
 
+/*Styling for produktene på produkt siden*/
 .default-flex{
     display: flex;
     flex-wrap: wrap;
@@ -311,6 +300,7 @@ ul#social-icons{
 }
 
 
+/*Styling for handlekurv siden*/
 .handlekurv-flex{
     display: flex;
     flex-wrap: wrap;
@@ -337,19 +327,7 @@ article.text-handlekurv{
 }
 
 
-.badge:after{
-    content:attr(value);
-    font-size:12px;
-    background: #fff;
-    border-radius:50%;
-    padding:3px;
-    position:relative;
-    left:-8px;
-    top:-10px;
-    opacity:0.9;
-}
-
-
+/*De grå boksene rundt produktene på produkt siden*/
 article.products{
     background-color: #D9D9D9;
     padding: 0.5rem;
@@ -357,6 +335,7 @@ article.products{
 }
 
 
+/*De grå buksene rundt produktene på handlekurv siden*/
 article.products-handlekurv{
     background-color: #D9D9D9;
     padding: 0.5rem;
@@ -370,30 +349,40 @@ section.faktura{
     background-color: #D9D9D9;
 }
 
+
+/*Rem på utsiden av teksten i betalingsboksen*/
 section.text-faktura{
     padding: 1rem;
 }
 
-/*se på dette etterpå*/
+
+/*Teksten i "til kassen" knappen er midt i knappen på handlekurv siden*/
 a.dark-beige-btn{
     text-align: center;
 }
 
+
+/*Plassering for prisen i betalingsboksen.*/
 .table-faktura{
     width: 100%;
-    
 }
 
+
+/*Streken i betalingsboksen*/
 hr.strek2{
     border: 1px solid #868686;
     width: 100%;
 } 
 
+
+/*Slik at knappene nederst i betalingsboksen er sentrert*/
 .betalingsmaater-center{
     text-align: center;
     padding: 1rem;
 }
 
+
+/*Størrelsen på bildene for betalingsmåtene i betalingsboksen*/
 .betalingsmaater img{
     width: 50px;
 }
@@ -413,10 +402,14 @@ hr.strek2{
         margin: 0;
     }
 
+
+    /*Slik at hamburgermenyen og forstørrelsesglasset blir borte over 600px på desktopversjonen*/
     #ham, .fa-magnifying-glass{
         display: none;
     }
 
+
+    /*Slik at produktene legger seg bortover på en rad på desktopversjonen*/
     .default-flex{
         display: flex;
         flex-wrap: wrap;
@@ -439,6 +432,8 @@ hr.strek2{
         width: 100%;
     }
 
+
+    /*Slik at det kommer opp en liste med forskjellig type sko når hamburgermenyen blir borte*/
     header ul.navbar-desktop{
         display: flex;
         gap: 0.5rem;
@@ -448,36 +443,19 @@ hr.strek2{
         flex-direction: column;
     }
     
+
     header ul.navbar-desktop a{
         color: #000;
         
     }
     
+
     ul.navbar-desktop{
         padding: 0;
     }
 
-    .flex-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .flex-section img{
-        width: 50%;
-    }
-
-    .flex-section section{
-        padding: 1rem;
-        width: 40%;
-        align-self: center;
-    }
-
-    .right img{
-        order:1;
-    }
-
-
+    /*Styling for boots bilde på desktob versjon */
     main section.left{
         float:left;
         padding: 0 15px 0 0;
@@ -490,6 +468,7 @@ hr.strek2{
     }
 
 
+    /*Styling for tøfler bilde på desktop versjon*/
     main section.middle{
         float:left;
         padding: 0 15px 0 0;
@@ -501,7 +480,7 @@ hr.strek2{
         width:100%;
     }
 
-
+    /*Styling for sneakers bilde på desktop versjon*/
     main section.right{
         float:left;
         padding: 0;
@@ -512,5 +491,5 @@ hr.strek2{
     main section.right img{
         width:100%;
     }
-
+    
 }
