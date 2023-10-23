@@ -138,7 +138,7 @@ img.view-mode{
 /*Styling og plassering av søppelkasse ikonet på handlekurv siden*/
 #trash{
     float: right;
-    font-size: 100%;
+    font-size: 150%;
 }
 
 .responsive{
@@ -417,6 +417,27 @@ hr.strek2{
         display: none;
     }
 
+    .default-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+    .default-flex h2{
+        flex-basis: 100%;
+    }
+    
+    
+    .default-flex article{
+        flex-basis: 20%;
+        min-width: 300px;
+    }
+    
+    
+    .default-flex article img{
+        width: 100%;
+    }
 
     header ul.navbar-desktop{
         display: flex;
