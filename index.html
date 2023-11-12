@@ -12,6 +12,7 @@
         <title>Forside FLIP</title>
     </head>
     <body>
+        <a href="#main-content" class="skip-to-content">Skip to content</a>
         <div id="grid-container">
         <header>
             <nav>
@@ -19,7 +20,7 @@
                 <a href="index.html" id="logo">FLIP</a>
                  <div>
                     <i id="heart" class="fa-regular fa-heart"></i>
-                    <a href="handlekurv.html"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="handlekurv.html" title="handlekurv"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
                     <i id="user" class="fa-regular fa-user"></i>
                  </div>
             </nav>
@@ -42,11 +43,14 @@
             <!--Seksjon 1 for søkefelt-->
             <section class="search">
                 <form method="post" action="#">
-                    <input type="text" name="search" placeholder="SEARCH" id="search">
+                    <label for="search-input">Søk</label>
+                    <input type="text" name="search" placeholder="SEARCH" id="search-input">
                     <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
                 </form>
             </section>
         </header>
+        <main class="front-page" id="main-content">
+
         <main class="front-page">
             <!--Seksjon 2 new arrivals-->
             <section class="main-campaign">

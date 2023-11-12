@@ -12,6 +12,7 @@
         <title>Forside FLIP</title>
     </head>
     <body>
+        <a href="#main-content" class="skip-to-content">Skip to content</a>
         <div id="grid-container">
         <header>
             <nav>
@@ -22,7 +23,7 @@
                     <!--Fovoritt ikonet-->
                     <i id="heart" class="fa-regular fa-heart"></i>
                     <!--Handlekurv ikonet-->
-                    <a href="handlekurv.html"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="handlekurv.html" title="handlekurv"><i  id="shopping-cart" class="fa-solid fa-cart-shopping"></i></a>
                     <i id="user" class="fa-regular fa-user"></i>
                  </div>
             </nav>
@@ -43,11 +44,14 @@
             <!--Seksjon 1 for søkefelt-->
             <section class="search">
                 <form method="post" action="#">
+                    <label for="search">Søk</label>
                     <input type="text" name="search" placeholder="SEARCH" id="search">
                     <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
                 </form>
             </section>
         </header>
+        <main class="front-page" id="main-content">
+
             <main>
                 <h1>SNEAKERS</h1>
                 <a href="#" class="beige-btn">Filter <i class="fa-solid fa-sliders"></i></a>

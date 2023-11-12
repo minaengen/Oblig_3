@@ -388,6 +388,10 @@ hr.strek2{
 }
 
 
+.tabell{
+    border: 1px solid black;
+}
+
 
 
 @media only screen and (min-width:600px){
