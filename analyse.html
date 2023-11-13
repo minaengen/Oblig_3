@@ -24,68 +24,91 @@
                  </div>
             </nav>
                  <hr class="strek">
-                 <ul class="navbar">
+                 <ul class="navbar" role="navigation"> <!--ARIA-attributter-->
                     <li><a href="produkt.html">Dame</a></li>
                     <li><a href="#">Menn</a></li>
                     <li><a href="#">Barn</a></li>
                     <li><a href="analyse.html">Analyse</a></li>
                  </ul>
         </header>
-        <main>
-            <h1>Analyse</h1>
-            <!--Seksjon for resultatene jeg fikk fra lighthouse-->
-            <section class="lighthouse">
-                <h2>SEO analyse</h2>
-                <img src="img/lighthouse_index.png" alt="Bilde for lighthouse av index siden">
-                <p>Jeg hadde bra tilgjengelighet, best practices og SEO på index siden på nettsiden min. Jeg hadde litt store bilder for nettsiden, så jeg hadde ikke så bra performance.</p>
-                <img src="img/lighthouse_index2.png" alt="Bilde for lighthouse av index siden">
-                <p>Jeg hadde litt store bilder for nettsiden, så det kom opp at jeg brude lage mindre bilder for nettsiden. det sto også at jeg hadde feil med width og height på bildene mine.</p>
-                <img src="img/lighthouse_handlekurv.png" alt="Bilde for lighthouse av handlekurv siden">
-                <p>Jeg hadde bra performance, tilgjengelighet, best practices og SEO på handlekurv siden min.</p>
-                <img src="img/lighthouse_handlekurv2.png" alt="Bilde for lighthouse av handlekurv siden">
-                <p></p>
-                <img src="img/lighthouse_handlekurv3.png" alt="Bilde for lighthouse av handlekurv siden">
-            </section>
-            <!--Seksjon for resultatene jeg fikk fra webaim-->
-            <section class="webaim">
-                <h2>UU analyse</h2>
-                <img src="img/webaim_index.png" alt="Bilde fra webaim av index siden">
-                <p>Jeg hadde 2 errors på index siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet og at jeg manglet en form for label på søkefeltet mitt.</p>
-                <img src="img/webaim_handlekurv.png" alt="Bilde fra webaim av handlekurv siden">
-                <p>Jeg hadde 1 error på handlekurv siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet.</p>
-                <img src="img/webaim_produkter.png" alt="Bilde fra webaim av produkt siden">
-                <p>Jeg hadde 2 errors på produkt siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet og at jeg manglet en form for label på søkefeltet mitt. Jeg hadde de samme errorene på sidenene siden jeg har lik kode for disse tingene på alle sidene.</p>
-            </section class="chatgpt">
-            <!--Seksjon for resultatene jeg fikk fra chatgpt-->
-            <section>
-                <h2>Resultater fra ChatGPT</h2>
-                <img src="img/chatgpt1.png" alt="Bilde fra resultatene fra ChatGPT">
-                <img src="img/chatgpt2.png" alt="Bilde fra resultatene fra ChatGPT">
-                <img src="img/chatgpt3.png" alt="Bilde fra resultatene fra ChatGPT">
-            </section>
-            <!--Tabell for sammenligning av resultatene fra lighthouse, webaim og chatgpt.-->
-            <h2>Sammenligning av resultatene fra Lighthouse, Webaim og ChatGPT</h2>
-            <section class="tabell">
-                <table width="100%">
-                    <tr>
-                      <th  width="33%" class="tabell">ChatGPT</th>
-                      <th  width="33%" class="tabell">Lighthouse</th>
-                      <th  width="33%" class="tabell">Webaim</th>
-                    </tr>
-                    <tr>
-                      <td class="tabell">ChatGPT kommenterte på at jeg måtte legge inn meta og at jeg måtte ha en meningsfullt "alt" attribut på alle img taggene mine. Den mener også at jeg må inkludere relevante nøkkelord til tittelen min på nettsiden. Jeg bør inkludere nøkkelord som er relevant for innholdet mitt.</td>
-                      <td class="tabell">Lighthouse kommenterte på at bildene mine var for store. Den mente at jeg kunne spare flere KiB på å gjøre bildene på nettsiden mindre. og at det var noe feil med width og height på bildene mine.  </td>
-                      <td class="tabell">Webaim kommenterte på at linken til handlekurv logoen ikke hadde tekst. den kommenterte også på at jeg ikke hadde form label på søkefeltet mitt.</td>
-                    </tr>
-                    <tr>
-                      <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
-                      <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
-                      <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
-                    </tr>
-                  </table>
-            </section>
-        </main>
-        <footer>
+        <div id="analyse">
+            <main role="main"> <!--ARIA-attributter-->
+                <h1>Analyse</h1>
+                <!--Seksjon for nøkkelord undersøkelsen-->
+                <section class="keywords">
+                    <h2>Nøkkelord undersøkelse</h2>
+                    <img src="img/google_trends.png" alt="Bilde fra google trends. Tabeller over interessen over søkeordene">
+                    <p>Man kan se på tabellen at boots blir søkt på mye, og det samme med med sneakers og tøfler. men nå er det vinter og det er flere personer som søker etter boot enn sneakers, siden det er kladt ute.</p>
+                    <img src="img/google_trends_ostfold.png" alt="Bilde fra google trends. Viser kart over Norge og hvor mange intresserte det er i søkeordene.">
+                    <p>Her kan man se kartet over Norge og hvor i Norge de forskjellige søkeordene er mest populære. Det står prosentvis over hvem av søkeordene som blir mest søkt på.</p>
+                    <img src="img/google_trends_sko.png" alt="Bilde fra google trends. Viser en tabell over interessen over søkeordene.">
+                    <p>Her kan man se på tabellen at Nike blir ofte søkt på. Dette er et produkt som har høy interesse.</p>
+                </section>
+                <!--Seksjon for resultatene jeg fikk fra lighthouse-->
+                <section class="lighthouse">
+                    <h2>SEO analyse</h2>
+                    <img src="img/lighthouse_index.png" alt="Bilde for lighthouse av index siden">
+                    <p>Jeg hadde bra tilgjengelighet, best practices og SEO på index siden på nettsiden min. Jeg hadde litt store bilder for nettsiden, så jeg hadde ikke så bra performance.</p>
+                    <img src="img/lighthouse_index2.png" alt="Bilde for lighthouse av index siden">
+                    <p>Jeg hadde litt store bilder for nettsiden, så det kom opp at jeg brude lage mindre bilder for nettsiden. det sto også at jeg hadde feil med width og height på bildene mine.</p>
+                    <img src="img/lighthouse_handlekurv.png" alt="Bilde for lighthouse av handlekurv siden">
+                    <p>Jeg hadde bra performance, tilgjengelighet, best practices og SEO på handlekurv siden min.</p>
+                    <img src="img/lighthouse_handlekurv2.png" alt="Bilde for lighthouse av handlekurv siden">
+                    <p></p>
+                    <img src="img/lighthouse_handlekurv3.png" alt="Bilde for lighthouse av handlekurv siden">
+                </section>
+                <!--Seksjon for resultatene jeg fikk fra webaim-->
+                <section class="webaim">
+                    <h2>UU analyse</h2>
+                    <img src="img/webaim_index.png" alt="Bilde fra webaim av index siden">
+                    <p>Jeg hadde 2 errors på index siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet og at jeg manglet en form for label på søkefeltet mitt.</p>
+                    <img src="img/webaim_handlekurv.png" alt="Bilde fra webaim av handlekurv siden">
+                    <p>Jeg hadde 1 error på handlekurv siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet.</p>
+                    <img src="img/webaim_produkter.png" alt="Bilde fra webaim av produkt siden">
+                    <p>Jeg hadde 2 errors på produkt siden, det var at jeg ikke hadde tekt til linken på handlekurv ikonet og at jeg manglet en form for label på søkefeltet mitt. Jeg hadde de samme errorene på sidenene siden jeg har lik kode for disse tingene på alle sidene.</p>
+                </section class="chatgpt">
+                <!--Seksjon for resultatene jeg fikk fra chatgpt-->
+                <section>
+                    <h2>Resultater fra ChatGPT</h2>
+                    <img src="img/chatgpt1.png" alt="Bilde fra resultatene fra ChatGPT">
+                    <img src="img/chatgpt2.png" alt="Bilde fra resultatene fra ChatGPT">
+                    <img src="img/chatgpt3.png" alt="Bilde fra resultatene fra ChatGPT">
+                </section>
+                <!--Tabell for sammenligning av resultatene fra lighthouse, webaim og chatgpt.-->
+                <h2>Sammenligning av resultatene fra Lighthouse, Webaim og ChatGPT</h2>
+                <section class="tabell">
+                    <table width="100%">
+                        <tr>
+                            <th  width="33%" class="tabell">ChatGPT</th>
+                            <th  width="33%" class="tabell">Lighthouse</th>
+                            <th  width="33%" class="tabell">Webaim</th>
+                        </tr>
+                        <tr>
+                            <td class="tabell">ChatGPT kommenterte på at jeg måtte legge inn meta og at jeg måtte ha en meningsfullt "alt" attribut på alle img taggene mine. Den mener også at jeg må inkludere relevante nøkkelord til tittelen min på nettsiden. Jeg bør inkludere nøkkelord som er relevant for innholdet mitt.</td>
+                            <td class="tabell">Lighthouse kommenterte på at bildene mine var for store. Den mente at jeg kunne spare flere KiB på å gjøre bildene på nettsiden mindre. og at det var noe feil med width og height på bildene mine.  </td>
+                            <td class="tabell">Webaim kommenterte på at linken til handlekurv logoen ikke hadde tekst. den kommenterte også på at jeg ikke hadde form label på søkefeltet mitt.</td>
+                        </tr>
+                        <tr>
+                            <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
+                            <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
+                            <td class="tabell">De kommenterte på litt forskjellige ting som er bra, slik at jeg kan se hva som bør gjøres noe med.</td>
+                        </tr>
+                    </table>
+                </section>
+                <!--Seksjon for skjermleserkompatibilitet-->
+                <section>
+                    <h2>Skjermleserkompatibilitet</h2>
+                    <p>Datamaskinen kan lese opp teksten og bildene som er på nettsiden.</p>
+                </section>
+                <!--Seksjon for microdata-->
+                <section class="microdata">
+                    <h2>Microdata ig Rich Results</h2>
+                    <img src="img/rich_results.png" alt="Bilde av testresultatene fra rich results.">
+
+                </section>
+            </main>
+        </div>
+        <footer role="contentinfo"> <!--ARIA-attributter-->
             <ul id="social-icons">
                 <li id="instagram" class="fa-brands fa-instagram"></li>
                 <li id="facebook" class="fa-brands fa-square-facebook"></li>

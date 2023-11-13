@@ -36,7 +36,7 @@
             </nav>
                  <hr class="strek">
                  <!--Liste for navbar-->
-                 <ul class="navbar">
+                 <ul class="navbar" role="navigation"> <!--ARIA-attributter-->
                     <li><a href="produkt.html">Dame</a></li>
                     <li><a href="#">Menn</a></li>
                     <li><a href="#">Barn</a></li>
@@ -57,9 +57,9 @@
                 </form>
             </section>
         </header>
-        <main class="front-page" id="main-content">
+        <main class="front-page" id="main-content" itemscope itemtype="https://schema.org/Product">
 
-            <main>
+            <main role="main"> <!--ARIA-attributter-->
                 <h1>SNEAKERS</h1>
                 <a href="#" class="beige-btn">Filter <i class="fa-solid fa-sliders"></i></a>
                 <a href="#"><img src="img/1boks.png" alt="image for choosing one column" class="view-mode"></a>
@@ -73,8 +73,8 @@
                             <i class="fa-regular fa-heart"></i>
                         </article>
                         <!--https://img01.ztat.net/article/spp-media-p1/ad0a8ed9cd264baea11cb56b8b3e7b52/f0906d2915e64dec8043520a2498adcf.jpg?imwidth=1800-->
-                        <img src="img/sko1.jpg" alt="Image for Nike shoes">
-                        <h2 class="brand">Nike Sportswear</h2>
+                        <img itemprop="img" src="img/sko1.jpg" alt="Image for Nike shoes"> <!--micro-->
+                        <h2 class="brand" itemprop="name">Nike Sportswear</h2>
                         <p>AIR FORCE 1 '07</p>
                         <p>1 256,00kr</p>
                     </article>
@@ -85,7 +85,7 @@
                             <i class="fa-regular fa-heart"></i>
                         </article>
                         <!--https://img01.ztat.net/article/spp-media-p1/9fb3448b675f4a188a61b053cebb01d2/ab276058d7e0461daf12cee0d8a28d7a.jpg?imwidth=1800&filter=packshot-->
-                        <img src="img/sko2.jpg" alt="Image for Puma shoes">
+                        <img itemprop="image" src="img/sko2.jpg" alt="Image for Puma shoes"> <!--micro-->
                         <h2 class="brand">Puma</h2>
                         <p>JADA RENEW</p>
                         <p>619,00kr</p>
@@ -114,9 +114,19 @@
                         <p>GAZELLE</p>
                         <p>989,00kr</p>
                     </article>
+                    <!--micro-->
+                    <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="reviewCount" content="100">
+                        <meta itemprop="ratingValue" content="4.4">
+                    </div>
+                    <!--micro-->
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="NOK">
+                        <span itemprop="price" content="1256.00"></span>
+                    </div>
                 </section>
             </main>
-            <footer>
+            <footer role="contentinfo"> <!--ARIA-attributter-->
                 <ul id="social-icons">
                     <!--Ikoner for sosiale medier-->
                     <li id="instagram" class="fa-brands fa-instagram"></li>

@@ -387,6 +387,9 @@ hr.strek2{
     width: 50px;
 }
 
+#analyse.img{
+    max-width: 50%;
+}
 
 .tabell{
     border: 1px solid black;
