@@ -387,12 +387,10 @@ hr.strek2{
     width: 50px;
 }
 
-#analyse.img{
-    max-width: 50%;
-}
 
+/*Design for tabell på analyse siden*/
 .tabell{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 
